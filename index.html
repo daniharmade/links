@@ -8,42 +8,7 @@
 
         <title>Dani Harmade | Links</title>
 
-        <meta name="description"
-            content="Dani Harmade is a Software Engineer, System Analyst, and Quality Assurance Engineer. Explore portfolio, CV, research papers, projects, and developer profiles.">
-
-        <meta name="keywords"
-            content="Dani Harmade, Software Engineer, QA Engineer, System Analyst, Web Developer, Android Developer, Portfolio Dani Harmade">
-
-        <meta name="author" content="Dani Harmade">
-
-        <meta name="robots" content="index, follow">
-
-        <link rel="canonical" href="https://daniharmade.vercel.app/links">
-
         <link rel="icon" href="/asset/favicon.ico" type="image/x-icon">
-
-        <meta property="og:title"
-            content="Dani Harmade | Developer Portfolio & Links">
-        <meta property="og:description"
-            content="Software Engineer, QA Engineer, and System Analyst. Explore my portfolio, projects, CV, and research work.">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://daniharmade.vercel.app/links">
-        <meta property="og:image"
-            content="https://daniharmade.vercel.app/asset/dani.png">
-
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Dani Harmade | Developer Links">
-        <meta name="twitter:description"
-            content="Software Engineer, QA Engineer, and System Analyst. Explore my portfolio and projects.">
-        <meta name="twitter:image"
-            content="https://daniharmade.vercel.app/asset/dani.png">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
-            rel="stylesheet">
 
         <script src="https://cdn.tailwindcss.com"></script>
 
@@ -52,6 +17,10 @@
 
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
+            rel="stylesheet">
 
         <style>
 
@@ -77,7 +46,7 @@ border-radius:10px;
     </head>
 
     <body
-        class="bg-gray-950 text-gray-100 h-screen flex items-center justify-center px-4 relative overflow-hidden">
+        class="bg-gray-950 text-gray-100 min-h-screen flex items-center justify-center px-3 sm:px-4 relative overflow-hidden">
 
         <div id="particles-js" class="absolute inset-0 -z-10"></div>
 
@@ -88,22 +57,24 @@ border-radius:10px;
                 class="absolute bottom-[-120px] right-[-120px] w-96 h-96 bg-[#ff5722]/20 blur-3xl rounded-full"></div>
         </div>
 
-        <div class="max-w-xl w-full">
+        <div class="w-full max-w-xl">
 
             <div
-                class="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-xl max-h-[85vh] overflow-y-auto">
+                class="bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-xl max-h-[90vh] overflow-y-auto">
 
+                <!-- PROFILE -->
                 <div class="flex flex-col items-center text-center">
 
                     <img src="asset/dani.png"
+                        onclick="openProfile()"
                         alt="Dani Harmade Software Engineer"
-                        class="w-28 h-28 rounded-full border-4 border-[#ff5722] shadow-lg">
+                        class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-[#ff5722] shadow-lg cursor-pointer hover:scale-105 transition">
 
-                    <h1 class="text-2xl font-semibold mt-4">
+                    <h1 class="text-xl sm:text-2xl font-semibold mt-4">
                         Dani Harmade
                     </h1>
 
-                    <p class="text-gray-400 text-sm mt-2">
+                    <p class="text-gray-400 text-xs sm:text-sm mt-2">
                         1+ Years Experience in Software Development
                     </p>
 
@@ -125,6 +96,7 @@ border-radius:10px;
 
                 </div>
 
+                <!-- TECH STACK -->
                 <div class="mt-8">
 
                     <h2 class="text-sm text-gray-400 mb-4 text-center">
@@ -132,7 +104,7 @@ border-radius:10px;
                     </h2>
 
                     <div
-                        class="grid grid-cols-7 gap-4 justify-items-center text-3xl">
+                        class="grid grid-cols-4 sm:grid-cols-7 gap-4 justify-items-center text-3xl">
 
                         <i
                             class="devicon-php-plain colored hover:scale-125 transition"></i>
@@ -154,11 +126,11 @@ border-radius:10px;
                 </div>
 
                 <!-- SOCIAL LINKS -->
-                <h2 class="text-sm text-gray-400 mt-8">
+                <h2 class="text-sm text-gray-400 mt-8 text-center">
                     Connect With Me
                 </h2>
 
-                <div class="mt-4 grid grid-cols-2 gap-3">
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
 
                     <a href="https://daniharmade.vercel.app/"
                         class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
@@ -212,8 +184,7 @@ border-radius:10px;
                         Research Papers
                     </a>
 
-                    <a
-                        href="https://www.researchgate.net/profile/Dani-Harmade?ev=hdr_xprf"
+                    <a href="https://www.researchgate.net/profile/Dani-Harmade"
                         class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
                         target="_blank">
                         <i class="fa-solid fa-flask"></i>
@@ -251,6 +222,7 @@ border-radius:10px;
 
                 </div>
 
+                <!-- EMAIL -->
                 <div class="mt-8">
 
                     <a href="mailto:daniharmade@gmail.com"
@@ -263,7 +235,7 @@ border-radius:10px;
 
                 </div>
 
-                <!-- SUPPORT ME -->
+                <!-- SUPPORT -->
                 <div class="mt-8 text-center">
 
                     <h2 class="text-sm text-gray-400 mb-4">
@@ -278,8 +250,7 @@ border-radius:10px;
                     <img
                         src="asset/QRIS.png"
                         onclick="openQRIS()"
-                        alt="Support Dani Harmade via QRIS"
-                        class="mx-auto w-48 rounded-xl border border-gray-700 hover:scale-105 transition cursor-pointer shadow-lg">
+                        class="mx-auto w-40 sm:w-48 rounded-xl border border-gray-700 hover:scale-105 transition cursor-pointer shadow-lg">
 
                     <p class="text-xs text-gray-600 mt-3">
                         Click the QR to scan
@@ -295,36 +266,50 @@ border-radius:10px;
 
         </div>
 
-        <!-- QRIS MODAL -->
+        <!-- PROFILE MODAL -->
+        <div id="profileModal"
+            class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center hidden z-50">
+
+            <div class="relative">
+
+                <button onclick="closeProfile()"
+                    class="absolute -top-10 right-0 text-white text-2xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <img src="asset/dani.png"
+                    class="w-72 sm:w-96 rounded-2xl border-4 border-[#ff5722] shadow-xl">
+
+            </div>
+
+        </div>
+
         <!-- QRIS MODAL -->
         <div id="qrisModal"
-            class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center hidden z-50">
+            class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center hidden z-50">
 
             <div
-                class="bg-gray-900 border border-gray-800 rounded-2xl p-10 text-center relative max-w-lg w-full">
+                class="bg-gray-900 border border-gray-800 rounded-2xl p-8 text-center relative max-w-lg w-full">
 
                 <button onclick="closeQRIS()"
                     class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
 
-                <h3 class="text-2xl mb-6 font-semibold">
+                <h3 class="text-xl mb-4 font-semibold">
                     Support via QRIS
                 </h3>
 
                 <img src="asset/QRIS.png"
-                    class="w-96 mx-auto rounded-xl shadow-lg">
+                    class="w-80 mx-auto rounded-xl shadow-lg">
 
-                <p class="text-sm text-gray-400 mt-6">
-                    Scan using any e-wallet (OVO, GoPay, DANA, ShopeePay)
+                <p class="text-sm text-gray-400 mt-4">
+                    Scan using any e-wallet
                 </p>
 
             </div>
 
         </div>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
         <script>
 
@@ -336,50 +321,13 @@ function closeQRIS(){
 document.getElementById("qrisModal").classList.add("hidden");
 }
 
-particlesJS("particles-js",{
-
-particles:{
-number:{value:60,density:{enable:true,value_area:800}},
-color:{value:"#ff5722"},
-shape:{type:"circle"},
-opacity:{value:0.5},
-size:{value:3,random:true},
-
-line_linked:{
-enable:true,
-distance:150,
-color:"#ff5722",
-opacity:0.4,
-width:1
-},
-
-move:{
-enable:true,
-speed:2,
-direction:"none",
-out_mode:"out"
+function openProfile(){
+document.getElementById("profileModal").classList.remove("hidden");
 }
 
-},
-
-interactivity:{
-detect_on:"canvas",
-
-events:{
-onhover:{enable:true,mode:"grab"},
-onclick:{enable:true,mode:"push"}
-},
-
-modes:{
-grab:{distance:140,line_linked:{opacity:1}},
-push:{particles_nb:4}
+function closeProfile(){
+document.getElementById("profileModal").classList.add("hidden");
 }
-
-},
-
-retina_detect:true
-
-});
 
 </script>
 
