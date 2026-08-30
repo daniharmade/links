@@ -24,72 +24,88 @@
 
         <style>
 
-body{
-font-family:'JetBrains Mono', monospace;
-}
+        body {
+            font-family: 'JetBrains Mono', monospace;
+        }
 
-::-webkit-scrollbar{
-width:6px;
-}
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
 
-::-webkit-scrollbar-track{
-background:#111827;
-}
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+        }
 
-::-webkit-scrollbar-thumb{
-background:#ff5722;
-border-radius:10px;
-}
+        ::-webkit-scrollbar-thumb {
+            background: #0f2747;
+            border-radius: 10px;
+        }
 
-</style>
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0a1b33;
+        }
+
+    </style>
 
     </head>
 
     <body
-        class="bg-gray-950 text-gray-100 min-h-screen flex items-center justify-center px-3 sm:px-4 relative overflow-hidden">
+        class="bg-slate-100 text-slate-900 min-h-screen flex items-center justify-center px-3 sm:px-4 relative overflow-hidden">
 
+        <!-- BACKGROUND -->
         <div id="particles-js" class="absolute inset-0 -z-10"></div>
 
         <div class="absolute inset-0 -z-10">
+
             <div
-                class="absolute top-[-120px] left-[-120px] w-96 h-96 bg-[#ff5722]/20 blur-3xl rounded-full"></div>
+                class="absolute top-[-120px] left-[-120px] w-96 h-96 bg-[#0f2747]/10 blur-3xl rounded-full">
+            </div>
+
             <div
-                class="absolute bottom-[-120px] right-[-120px] w-96 h-96 bg-[#ff5722]/20 blur-3xl rounded-full"></div>
+                class="absolute bottom-[-120px] right-[-120px] w-96 h-96 bg-[#0f2747]/10 blur-3xl rounded-full">
+            </div>
+
         </div>
 
         <div class="w-full max-w-xl">
 
+            <!-- MAIN CARD -->
             <div
-                class="bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-xl max-h-[90vh] overflow-y-auto">
+                class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xl max-h-[90vh] overflow-y-auto">
 
                 <!-- PROFILE -->
                 <div class="flex flex-col items-center text-center">
 
-                    <img src="asset/dani.png"
+                    <img
+                        src="asset/dani.JPG"
                         onclick="openProfile()"
                         alt="Dani Harmade Software Engineer"
-                        class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-[#ff5722] shadow-lg cursor-pointer hover:scale-105 transition">
+                        class="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-[#0f2747] shadow-lg cursor-pointer hover:scale-105 transition">
 
-                    <h1 class="text-xl sm:text-2xl font-semibold mt-4">
+                    <h1
+                        class="text-xl sm:text-2xl font-semibold mt-4 text-[#0f2747]">
                         Dani Harmade
                     </h1>
 
-                    <p class="text-gray-400 text-xs sm:text-sm mt-2">
+                    <p class="text-slate-500 text-xs sm:text-sm mt-2">
                         1+ Years Experience in Software Development
                     </p>
 
                     <div class="flex gap-2 flex-wrap justify-center mt-4">
 
-                        <span class="px-3 py-1 bg-gray-800 rounded-lg text-xs">
+                        <span
+                            class="px-3 py-1 bg-[#0f2747] text-white rounded-lg text-xs">
+                            Quality Assurance Engineer
+                        </span>
+
+                        <span
+                            class="px-3 py-1 bg-slate-100 text-[#0f2747] border border-slate-200 rounded-lg text-xs">
                             Software Engineer
                         </span>
 
-                        <span class="px-3 py-1 bg-gray-800 rounded-lg text-xs">
+                        <span
+                            class="px-3 py-1 bg-slate-100 text-[#0f2747] border border-slate-200 rounded-lg text-xs">
                             System Analyst
-                        </span>
-
-                        <span class="px-3 py-1 bg-gray-800 rounded-lg text-xs">
-                            Quality Assurance Engineer
                         </span>
 
                     </div>
@@ -99,125 +115,179 @@ border-radius:10px;
                 <!-- TECH STACK -->
                 <div class="mt-8">
 
-                    <h2 class="text-sm text-gray-400 mb-4 text-center">
+                    <h2 class="text-sm text-slate-500 mb-4 text-center">
                         Tech Stack
                     </h2>
 
                     <div
-                        class="grid grid-cols-4 sm:grid-cols-7 gap-4 justify-items-center text-3xl">
+                        class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-3xl text-[#0f2747]">
 
+                        <!-- Appium -->
+                        <span
+                            class="text-xs sm:text-sm font-semibold px-3 py-1 border border-[#0f2747] rounded-md hover:bg-[#0f2747] hover:text-white transition">
+                            Appium
+                        </span>
+
+                        <!-- Playwright -->
+                        <span
+                            class="text-xs sm:text-sm font-semibold px-3 py-1 border border-[#0f2747] rounded-md hover:bg-[#0f2747] hover:text-white transition">
+                            Playwright
+                        </span>
+
+                        <!-- Laravel -->
                         <i
-                            class="devicon-php-plain colored hover:scale-125 transition"></i>
+                            class="devicon-laravel-plain colored hover:scale-125 transition"
+                            title="Laravel"></i>
+
+                        <!-- JavaScript -->
                         <i
-                            class="devicon-laravel-plain colored hover:scale-125 transition"></i>
+                            class="devicon-javascript-plain colored hover:scale-125 transition"
+                            title="JavaScript"></i>
+
+                        <!-- Kotlin -->
                         <i
-                            class="devicon-javascript-plain colored hover:scale-125 transition"></i>
+                            class="devicon-kotlin-plain colored hover:scale-125 transition"
+                            title="Kotlin"></i>
+
+                        <!-- Python -->
                         <i
-                            class="devicon-kotlin-plain colored hover:scale-125 transition"></i>
+                            class="devicon-python-plain colored hover:scale-125 transition"
+                            title="Python"></i>
+
+                        <!-- Postman -->
                         <i
-                            class="devicon-python-plain colored hover:scale-125 transition"></i>
-                        <i
-                            class="devicon-postman-plain colored hover:scale-125 transition"></i>
-                        <i
-                            class="devicon-android-plain colored hover:scale-125 transition"></i>
+                            class="devicon-postman-plain colored hover:scale-125 transition"
+                            title="Postman"></i>
 
                     </div>
 
                 </div>
 
                 <!-- SOCIAL LINKS -->
-                <h2 class="text-sm text-gray-400 mt-8 text-center">
+                <h2 class="text-sm text-slate-500 mt-8 text-center">
                     Connect With Me
                 </h2>
 
                 <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
 
-                    <a href="https://daniharmade.vercel.app/"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="https://daniharmade.vercel.app/"
+                        class="flex items-center justify-center gap-2 bg-[#0f2747] hover:bg-[#0a1b33] text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-solid fa-globe"></i>
                         Visit Website
+
                     </a>
 
-                    <a href="asset/portfolio.pdf"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="asset/portfolio.pdf"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-solid fa-folder-open"></i>
                         View Portfolio
+
                     </a>
 
                     <a
                         href="https://daniharmade.vercel.app/pdf/cv-dani-harmade.pdf"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-solid fa-file"></i>
                         Download CV
+
                     </a>
 
-                    <a href="https://www.linkedin.com/in/daniharmade/"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="https://www.linkedin.com/in/daniharmade/"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-brands fa-linkedin"></i>
                         Let's Connect
+
                     </a>
 
-                    <a href="https://github.com/daniharmade"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="https://github.com/daniharmade"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-brands fa-github"></i>
                         View My Code
+
                     </a>
 
                     <a
                         href="https://www.dicoding.com/users/dani_harmade/academies"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-solid fa-graduation-cap"></i>
                         Learning Journey
+
                     </a>
 
                     <a
                         href="https://scholar.google.com/citations?user=TYSZfHQAAAAJ&hl=id"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-solid fa-book"></i>
                         Research Papers
+
                     </a>
 
-                    <a href="https://www.researchgate.net/profile/Dani-Harmade"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="https://www.researchgate.net/profile/Dani-Harmade"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-solid fa-flask"></i>
                         ResearchGate
+
                     </a>
 
-                    <a href="https://orcid.org/0009-0009-1044-4653"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="https://orcid.org/0009-0009-1044-4653"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-solid fa-id-badge"></i>
                         ORCID Profile
+
                     </a>
 
                     <a
                         href="https://www.youtube.com/channel/UC6k1jD6eKMEUN5sD4ICTrzw"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-brands fa-youtube"></i>
                         Watch Videos
+
                     </a>
 
-                    <a href="https://www.instagram.com/daniharmade/"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="https://www.instagram.com/daniharmade/"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-brands fa-instagram"></i>
                         Follow Me
+
                     </a>
 
-                    <a href="https://www.facebook.com/daniharmade"
-                        class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-[#ff5722] transition p-3 rounded-xl text-sm"
+                    <a
+                        href="https://www.facebook.com/daniharmade"
+                        class="flex items-center justify-center gap-2 bg-slate-50 border border-slate-200 hover:bg-[#0f2747] hover:text-white transition p-3 rounded-xl text-sm"
                         target="_blank">
+
                         <i class="fa-brands fa-facebook"></i>
                         Facebook
+
                     </a>
 
                 </div>
@@ -225,10 +295,12 @@ border-radius:10px;
                 <!-- EMAIL -->
                 <div class="mt-8">
 
-                    <a href="mailto:daniharmade@gmail.com"
-                        class="flex items-center justify-center gap-3 bg-[#ff5722] hover:bg-orange-600 transition p-4 rounded-xl text-sm font-semibold w-full">
+                    <a
+                        href="mailto:daniharmade@gmail.com"
+                        class="flex items-center justify-center gap-3 bg-[#0f2747] hover:bg-[#0a1b33] text-white transition p-4 rounded-xl text-sm font-semibold w-full">
 
                         <i class="fa-solid fa-envelope"></i>
+
                         Let's Catch Up — daniharmade@gmail.com
 
                     </a>
@@ -238,11 +310,11 @@ border-radius:10px;
                 <!-- SUPPORT -->
                 <div class="mt-8 text-center">
 
-                    <h2 class="text-sm text-gray-400 mb-4">
+                    <h2 class="text-sm text-slate-500 mb-4">
                         Support My Work
                     </h2>
 
-                    <p class="text-xs text-gray-500 mb-4">
+                    <p class="text-xs text-slate-400 mb-4">
                         If you enjoy my projects or research, you can support me
                         via QRIS 🙌
                     </p>
@@ -250,9 +322,9 @@ border-radius:10px;
                     <img
                         src="asset/QRIS.png"
                         onclick="openQRIS()"
-                        class="mx-auto w-40 sm:w-48 rounded-xl border border-gray-700 hover:scale-105 transition cursor-pointer shadow-lg">
+                        class="mx-auto w-40 sm:w-48 rounded-xl border border-slate-200 hover:scale-105 transition cursor-pointer shadow-lg">
 
-                    <p class="text-xs text-gray-600 mt-3">
+                    <p class="text-xs text-slate-400 mt-3">
                         Click the QR to scan
                     </p>
 
@@ -260,50 +332,61 @@ border-radius:10px;
 
             </div>
 
-            <p class="text-center text-xs text-gray-600 mt-6">
+            <!-- FOOTER -->
+            <p class="text-center text-xs text-slate-400 mt-6">
                 Built like a developer ⚡ HTML • TailwindCSS
             </p>
 
         </div>
 
         <!-- PROFILE MODAL -->
-        <div id="profileModal"
-            class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center hidden z-50">
+        <div
+            id="profileModal"
+            class="fixed inset-0 bg-[#0a1b33]/90 backdrop-blur-sm flex items-center justify-center hidden z-50">
 
             <div class="relative">
 
-                <button onclick="closeProfile()"
-                    class="absolute -top-10 right-0 text-white text-2xl">
+                <button
+                    onclick="closeProfile()"
+                    class="absolute -top-10 right-0 text-white text-2xl hover:text-slate-300">
+
                     <i class="fa-solid fa-xmark"></i>
+
                 </button>
 
-                <img src="asset/dani.png"
-                    class="w-72 sm:w-96 rounded-2xl border-4 border-[#ff5722] shadow-xl">
+                <img
+                    src="asset/dani.JPG"
+                    class="w-72 sm:w-96 rounded-2xl border-4 border-white shadow-xl">
 
             </div>
 
         </div>
 
         <!-- QRIS MODAL -->
-        <div id="qrisModal"
-            class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center hidden z-50">
+        <div
+            id="qrisModal"
+            class="fixed inset-0 bg-[#0a1b33]/90 backdrop-blur-sm flex items-center justify-center hidden z-50">
 
             <div
-                class="bg-gray-900 border border-gray-800 rounded-2xl p-8 text-center relative max-w-lg w-full">
+                class="bg-white border border-slate-200 rounded-2xl p-8 text-center relative max-w-lg w-full">
 
-                <button onclick="closeQRIS()"
-                    class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">
+                <button
+                    onclick="closeQRIS()"
+                    class="absolute top-4 right-4 text-slate-400 hover:text-[#0f2747] text-2xl">
+
                     <i class="fa-solid fa-xmark"></i>
+
                 </button>
 
-                <h3 class="text-xl mb-4 font-semibold">
+                <h3 class="text-xl mb-4 font-semibold text-[#0f2747]">
                     Support via QRIS
                 </h3>
 
-                <img src="asset/QRIS.png"
+                <img
+                    src="asset/QRIS.png"
                     class="w-80 mx-auto rounded-xl shadow-lg">
 
-                <p class="text-sm text-gray-400 mt-4">
+                <p class="text-sm text-slate-400 mt-4">
                     Scan using any e-wallet
                 </p>
 
@@ -313,23 +396,24 @@ border-radius:10px;
 
         <script>
 
-function openQRIS(){
-document.getElementById("qrisModal").classList.remove("hidden");
-}
+        function openQRIS() {
+            document.getElementById("qrisModal").classList.remove("hidden");
+        }
 
-function closeQRIS(){
-document.getElementById("qrisModal").classList.add("hidden");
-}
+        function closeQRIS() {
+            document.getElementById("qrisModal").classList.add("hidden");
+        }
 
-function openProfile(){
-document.getElementById("profileModal").classList.remove("hidden");
-}
+        function openProfile() {
+            document.getElementById("profileModal").classList.remove("hidden");
+        }
 
-function closeProfile(){
-document.getElementById("profileModal").classList.add("hidden");
-}
+        function closeProfile() {
+            document.getElementById("profileModal").classList.add("hidden");
+        }
 
-</script>
+    </script>
 
     </body>
+
 </html>
