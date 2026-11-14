@@ -1,0 +1,8 @@
+{
+  "name": "Dani Harmade | Links",
+  "short_name": "Links",
+  "icons": [{ "src": "/src/img/favicon.ico", "sizes": "32x32", "type": "image/x-icon" }],
+  "theme_color": "#0F172A",
+  "background_color": "#F8FAFC",
+  "display": "standalone"
+}

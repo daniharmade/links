@@ -1,0 +1,51 @@
+:root { color-scheme: light; }
+html.dark { color-scheme: dark; }
+body { font-family: 'Inter', system-ui, sans-serif; background: #F8FAFC; }
+h1, h2, h3 { text-wrap: balance; }
+
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #475569; outline-offset: 2px; }
+.dark a:focus-visible, .dark button:focus-visible, .dark input:focus-visible { outline-color: #e2e8f0; }
+
+.skip-link { position: absolute; left: 1rem; top: -4rem; z-index: 100; background: #0F172A; color: #fff; padding: .5rem 1rem; border-radius: .5rem; font-size: .875rem; }
+.skip-link:focus { top: .75rem; }
+
+/* Reveal */
+html.js .reveal { opacity: 0; transform: translateY(12px); transition: opacity .4s ease, transform .4s ease, border-color .2s, background-color .2s; }
+html.js .reveal.in { opacity: 1; transform: none; }
+html.js .reveal.in.link-card:hover { transform: translateY(-2px); }
+.link-card:hover .link-arrow { color: #334155; }
+
+/* Social buttons */
+.social-btn:hover { background: #0F172A; color: #fff; border-color: #0F172A; }
+
+/* Toast */
+#toast { opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+#toast.show { opacity: 1; transform: none; }
+
+/* Dark mode */
+.dark body { background: #0B1220; color: #a8b3c7; }
+.dark header#site-header { background: rgba(17, 28, 51, .9); border-color: #26334f; }
+.dark .bg-white { background-color: #111C33; }
+.dark .bg-slate-50 { background-color: #16213A; }
+.dark .bg-slate-100 { background-color: #16213A; }
+.dark .border-slate-200 { border-color: #26334f; }
+.dark .border-slate-100 { border-color: #1b2740; }
+.dark .text-slate-900 { color: #f1f5f9; }
+.dark .text-slate-700 { color: #cbd5e1; }
+.dark .text-slate-600 { color: #a8b3c7; }
+.dark .text-slate-500, .dark .text-slate-400 { color: #94a3b8; }
+.dark .link-card:hover { background-color: #16213A; border-color: #334155; }
+.dark .link-card:hover .link-arrow { color: #f1f5f9; }
+.dark .social-btn:hover { background: #f1f5f9; color: #0F172A; border-color: #f1f5f9; }
+.dark .btn-primary { background: #f1f5f9; color: #0F172A; }
+.dark .btn-primary:hover { background: #e2e8f0; }
+.dark #progress { background: #f1f5f9; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+[hidden] { display: none !important; }
